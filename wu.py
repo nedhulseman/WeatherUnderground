@@ -46,6 +46,7 @@ writer.writerow(heading)
 #outter for-loop iterates through the list of locations
 for i in range(len(locations)):
     #creates a url string and concatenates the given location to it 
+    # 'dc44b88239b5bb92' in the following url is my api key. This is where you will put your own key
     link_string = 'http://api.wunderground.com/api/dc44b88239b5bb92/forecast10day/conditions/q/%s'%(locations[i])
     path=urlopen(link_string)
     json_string=path.read().decode("utf-8") #imports entire json for a location, but we are only interested in the forecasts
