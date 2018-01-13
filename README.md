@@ -1,4 +1,4 @@
-# Wather Underground Data retrieval
+# Wather Underground Data Retrieval
 
 This script will iterate through a list of locations and return their 5-day high and low temperature forecast
 
